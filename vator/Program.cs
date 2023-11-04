@@ -28,7 +28,7 @@ namespace vator
           Console.WriteLine("Buenos noches");
       }
 
-      //pantalla de bienvenida
+      
 
       Console.WriteLine("Hola Bienvenidos al juego Vator");
       Console.WriteLine("El juego conciste en adivinar el numero que piensa la PC");
