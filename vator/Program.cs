@@ -116,9 +116,10 @@ namespace vator
         vaca += 1;
       }
 
-      cantVacas(vaca);
+      intentos++;
+      cantVacas(vaca,intentos);
 
-      cantToros(toro);                
+      cantToros(toro, intentos);                
             
       while (toro<4)
       {
@@ -210,45 +211,47 @@ namespace vator
             vaca += 1;
         }
 
-        cantVacas(vaca);
+        intentos++;
 
-        cantToros(toro);
+        cantVacas(vaca, intentos);
+
+        cantToros(toro,intentos);
 
                 
       }
 
     }
 
-    public static void cantToros(int toro)
+    public static void cantToros(int toro, int intentos)
     {
       if (toro == 1)
       {
-          Console.WriteLine($"Hay {toro} toro \n intento numero{intentos}");
+          Console.WriteLine($"Hay {toro} toro \n intento numero {intentos}");
       }
       else if (toro == 2)
       {
-          Console.WriteLine($"Hay {toro} toros \n intento numero{intentos}");
+          Console.WriteLine($"Hay {toro} toros \n intento numero {intentos}");
       }
       else if (toro == 3)
       {
-          Console.WriteLine($"Hay {toro} toros \n intento numero{intentos}");
+          Console.WriteLine($"Hay {toro} toros \n intento numero {intentos}");
       }
       else if (toro == 4)
       {
                 
-          Console.WriteLine($"Hay {toro} toros, Felicidades ganaste \n intento numero{intentos}");
+          Console.WriteLine($"Hay {toro} toros, Felicidades ganaste \n intento numero {intentos}");
       }
     }
 
-    public static void cantVacas(int vaca)
+    public static void cantVacas(int vaca, int intentos)
     {
       if (vaca == 1)
       {
-          Console.WriteLine($"Hay {vaca} vaca \n intento numero{intentos}");
+          Console.WriteLine($"Hay {vaca} vaca \n intento numero {intentos}");
       }
       else if (vaca == 2)
       {
-          Console.WriteLine($"Hay {vaca} vaca \n intento numero{intentos}");
+          Console.WriteLine($"Hay {vaca} vaca \n intento numero {intentos}");
       }
       else if (vaca == 3)
       {
@@ -256,11 +259,11 @@ namespace vator
       }
       else if (vaca == 4)
       {
-          Console.WriteLine($"Hay {vaca} vaca \n intento numero{intentos}");
+          Console.WriteLine($"Hay {vaca} vaca \n intento numero {intentos}");
       }
       else if (toro == 0 && vaca == 0)
       {
-          Console.WriteLine("No hay nada \n intento numero{intentos}");
+          Console.WriteLine($"No hay nada \n intento numero {intentos}");
       }
     }
 
